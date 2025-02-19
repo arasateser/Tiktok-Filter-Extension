@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "TCC Override",
+  "version": "1.0",
+  "description": "Scrolls down and removes duplicate products from TikTok Creative Center ads page.",
+  "permissions": [ "scripting", "activeTab" ],
+  "host_permissions": [ "https://ads.tiktok.com/*" ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+
+  },
+  "icons": {
+    "16": "icons/tt_off_16.png",
+    "32": "icons/tt_off_32.png",
+    "48": "icons/tt_off_48.png",
+    "128": "icons/tt_off_128.png"
+  }
+}
