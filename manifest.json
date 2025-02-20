@@ -4,7 +4,7 @@
   "version": "1.0",
   "description": "Scrolls down and removes duplicate products from TikTok Creative Center ads page.",
   "permissions": [ "scripting", "activeTab" ],
-  "host_permissions": [ "https://library.tiktok.com/ads" ],
+  "host_permissions": [ "<all_urls>" ],
   //"background": {
   //  "service_worker": "background.js"
   //},
@@ -16,11 +16,11 @@
     "32": "icons/tt_off_32.png",
     "48": "icons/tt_off_48.png",
     "128": "icons/tt_off_128.png"
-  },
-  "content_scripts": [
-    {
-      "matches": [ "https://library.tiktok.com/ads" ],
-      "js": [ "content.js" ]
-    }
-  ]
+  }
+  //"content_scripts": [
+  //  {
+  //    "matches": [ "<all_urls>" ],
+  //    "js": [ "content.js" ]
+  //  }
+  //]
 }
