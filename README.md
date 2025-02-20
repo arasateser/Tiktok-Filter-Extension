@@ -19,10 +19,6 @@ This extension designed for Google Chrome only at this stage of the project. You
 
 ## In Process Features
 
-User declared loading values
-
-Function killing future
-
 Removing duplicated ads
 
 Blocking unwanted advertisers
