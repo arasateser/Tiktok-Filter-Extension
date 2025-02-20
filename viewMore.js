@@ -1,9 +1,16 @@
-console.log("viewMore.js injected successfully!");
+if (window.viewMoreScriptLoaded) { //checking if this script injected before
+    console.log("viewMore.js already loaded. skipping duplicate injection")
+} else {
+    window.viewMoreScriptLoaded = true;
+    console.log("viewMore.js injected successfully!");
+
+
 
 let observerActive = false; //global olmali ama her calistiginda tekrar olusturulmaya calisiliyor 
                             //hata veriyor - programi bozmuyor. - programdaki yeri hakkinda suphelerim 
                             //var sadece bunu incelemek icin zaman ayir
 let stopRequested = false;
+let observer = null;
 
 chrome.runtime.onMessage.addListener((message) => { //listening buttons on the popup
     if (message.action === "stopViewMore") {//kill process button
@@ -22,7 +29,7 @@ chrome.runtime.onMessage.addListener((message) => { //listening buttons on the p
 
         let clickCounter = 0;
         const maxClicks = message.maxClicks || 5;
-        //stopRequested = false;
+        stopRequested = false; //Reset stop request when starting again
 
         console.log(`Number of pages to load: ${maxClicks}`);
 
@@ -77,3 +84,4 @@ chrome.runtime.onMessage.addListener((message) => { //listening buttons on the p
     }
     return false;
 });
+}
