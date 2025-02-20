@@ -14,6 +14,9 @@ Load this directory in Chrome as an unpacked extension. [Example Here](https://d
 
 Click the extension icon in the Chrome toolbar, then select the "TCC Override" extension. A popup will appear displaying the text "TCC Override".
 
+##Usage
+This extension designed for Google Chrome only at this stage of the project. You can get unexpected errors in other browsers.
+
 ## In Process Features
 
 User declared loading values

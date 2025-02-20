@@ -7,7 +7,7 @@ chrome.runtime.onMessage.addListener((message) => {
         console.log("Received message to click 'View More'");
 
         let clickCounter = 0;
-        const maxClicks = 5;
+        const maxClicks = message.maxClicks || 5;
         let observer;
 
         function clickViewMore(button) {
