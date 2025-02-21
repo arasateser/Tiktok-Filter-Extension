@@ -6,7 +6,7 @@
   "permissions": [ "scripting", "activeTab", "storage" ],
   "host_permissions": [ "https://library.tiktok.com/*" ],
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "/src/popup/popup.html"
   },
   "icons": {
     "16": "/assets/icons/tt_off_16.png",

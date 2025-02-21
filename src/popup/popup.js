@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (tabs.length === 0) return;
 
             chrome.tabs.sendMessage(tabs[0].id, { action, ...data }, function (response) {
-                    console.log("sent message:", action);
+                console.log("sent message:", action);
             });
         });
     }
