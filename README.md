@@ -19,7 +19,7 @@ This extension is currently **not published** on the Chrome Web Store. If you ar
      ```sh
      git clone https://github.com/arasateser/tiktok-filter-extension.git
      ```
-   - Or download the ZIP from the **Code** button on this repository. **(does the same thing and easier for non-programming reasons)**
+   - Or download the ZIP from the **Code** button on this repository. **(does the same thing and easier for non-programming usage)**
 
 2. **Load as an Unpacked Extension**  
    - Open Google Chrome and go to `chrome://extensions/`  
