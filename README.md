@@ -36,6 +36,8 @@ This extension is currently **not published** on the Chrome Web Store. If you ar
 
 ## 🎮 Usage  
 
+🚀 **Pin the extension** for easier access.  
+🚀 After pressing the **"View More Pages"** button, **hover your mouse over any ad** to activate the **clicking functionality** (triggers the **Observer API**).  
 🚀 This extension is **designed for Google Chrome** at this stage. It may not function properly in other browsers.  
 
 ---
