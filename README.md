@@ -1,41 +1,73 @@
-# Tiktok Filter Extension
+# 📌 Tiktok Filter Extension  
 
-Loads ads automaticly on [Tiktok Ad Library](https://library.tiktok.com/ads) and removes duplicates on the page to make product analyse process much faster.
+A Chrome extension that **automatically loads ads** on [Tiktok Ad Library](https://library.tiktok.com/ads) and **removes duplicate ads**, making product analysis **faster and more efficient**.  
 
-## Getting Started
+---
 
-This extension has not been published on Chrome Web Store yet. If you do not know what you are doing please do not change any file. Extension does not collect any information so there are no security vulnerabilities. Safe to use.
+## 🚀 Getting Started  
 
-### Installing
+This extension is currently **not published** on the Chrome Web Store. If you are unfamiliar with Chrome extensions, **avoid modifying any files**.  
 
-Clone this repository or download the zip from the blue Code button on extension page.
+🔒 **Security Notice**: This extension does **not** collect any data and does **not pose security risks**.  
 
-Load this directory in Chrome as an unpacked extension. [Example Here](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world#load-unpacked)
+---
 
-Click the extension icon in the Chrome toolbar, then select the "TCC Override" extension. A popup will appear displaying the text "TCC Override".
+## Installation  
 
-##Usage
-This extension designed for Google Chrome only at this stage of the project. You can get unexpected errors in other browsers.
+1. **Clone or Download**  
+   - Clone this repository:  
+     ```sh
+     git clone https://github.com/arasateser/tiktok-filter-extension.git
+     ```
+   - Or download the ZIP from the **Code** button on this repository. **(does the same thing and easier for non-programming reasons)**
 
-## In Process Features
+2. **Load as an Unpacked Extension**  
+   - Open Google Chrome and go to `chrome://extensions/`  
+   - Enable **Developer Mode** (toggle in the top-right corner)  
+   - Click **"Load unpacked"** and select the project directory  
+   - The extension will now be available in the Chrome toolbar  
 
-Removing duplicated ads
+3. **Activate the Extension**  
+   - Click the extension icon in the Chrome toolbar  
+   - Select **"TCC Override"**  
+   - A popup will appear confirming activation
+  
+---
 
-Blocking unwanted advertisers
+## 🎮 Usage  
 
-Blocking un-named ads
+🚀 This extension is **designed for Google Chrome** at this stage. It may not function properly in other browsers.  
 
-Pop-Up visual improvments
+---
 
-Notifications / Badge
+## 🛠 Features  
 
+✅ User-declared loading values  
+✅ Function-killing feature  
+🔘 Removes duplicate ads  
+🔘 Filters number of views  
+🔘 Blocks unwanted advertisers  
+🔘 Blocks unnamed ads  
+🔘 Improves popup UI  
+🔘 Adds notifications & badge indicators  
 
-## Versioning
+---
 
-* 0.1
-    * Automatically loading ad pages
+## 🏷 Versioning  
 
-## Authors
+📌 **v0.1** – Initial release  
+- Simple popup visualization  
 
-  - **Aras Ateşer**
-    [GitHub](https://github.com/arasateser)
+📌 **v0.2**  
+- Automatically loads ad pages  
+
+📌 **v0.3**  
+- Stop 'Load Ad' feature  
+
+---
+
+## 👤 Author  
+
+**Aras Ateşer**  
+- [GitHub](https://github.com/arasateser)
+- [LinkedIn](https://www.linkedin.com/in/arasateser/)
