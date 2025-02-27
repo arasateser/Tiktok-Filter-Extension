@@ -1,24 +1,102 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" viewMore="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Popup</title>
+    <style>
+        body {
+            width: 220px;
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        label {
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        input {
+            width: 80%;
+            padding: 5px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        button {
+            width: 90%;
+            padding: 8px;
+            margin-top: 5px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #viewMoreButton {
+            background-color: #007bff;
+            color: white;
+        }
+
+        #killProcessButton {
+            background-color: red;
+            color: white;
+        }
+
+        #filterViews {
+            background-color: #28a745;
+            color: white;
+        }
+
+        p {
+            font-size: 12px;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        #github-link {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            font-size: 10px;
+            color: #888;
+            text-decoration: none;
+        }
+
+            #github-link:hover {
+                color: #007bff;
+            }
+
+    </style>
 </head>
 
 <body>
     <label for="maxClicksInput">Number of Pages:</label>
     <input type="number" id="maxClicksInput" min="2" value="20" />
 
-    <button id="viewMoreButton">View More Pages </button>
-    <button id="killProcessButton" style="background-color: red; color:white">Kill Process</button>
-    <button id="overrideButton" disabled>Override Products</button>
+    <button id="viewMoreButton">View More Pages</button>
+    <button id="killProcessButton">Kill Process</button>
+
+    <label for="minViews">Number of Views:</label>
+    <input type="number" id="minViews" value="9" />
+
+    <button id="filterViews">Filter Views</button>
 
     <p id="message">Press a button!</p>
 
     <script src="popup.js"></script>
+
+    <a href="https://github.com/arasateser" target="_blank" id="github-link">by Aras Ateşer</a>
+
 </body>
 
 </html>
