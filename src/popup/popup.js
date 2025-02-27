@@ -23,7 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
         sendMessageToScript("stopViewMore");
     });
 
-    document.getElementById("overrideButton").addEventListener("click", function () {
-        messageElement.textContent = "Pressed Override Products";
+    document.getElementById("filterViewsButton").addEventListener("click", function () {
+        const minViews = parseInt(document.getElementById("minViews").values, 10) || 9; //get the decimal if not put 9
+        document.getElementById("message").textContent = `filtering ads with at least ${minViews} views`;
+
+        chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+            if (tabs.length === 0) return;
+
+            chrome.tabs.sendMessage(tabs[0].id, { action: "filterAds", minViews });
+        });
     });
 });

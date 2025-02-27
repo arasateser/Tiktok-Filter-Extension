@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "TCC Override",
-  "version": "0.4",
-  "description": "Scrolls down and removes duplicate products from TikTok Creative Center ads page.",
+  "version": "1.0.0",
+  "description": "A Chrome extension that automatically loads ads on Tiktok Ad Library, removes duplicate ads, filters to make product analysis faster and more efficient.",
   "permissions": [ "scripting", "activeTab", "storage" ],
   "host_permissions": [ "https://library.tiktok.com/*" ],
   "action": {
@@ -10,9 +10,13 @@
   },
   "icons": {
     "16": "/assets/icons/tt_off_16.png",
+    "166": "/assets/icons/tt_off_16.png",
     "32": "/assets/icons/tt_off_32.png",
     "48": "/assets/icons/tt_off_48.png",
     "128": "/assets/icons/tt_off_128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
   },
   "content_scripts": [
     {

@@ -46,12 +46,12 @@ This extension is currently **not published** on the Chrome Web Store. If you ar
 
 ✅ User-declared loading values  
 ✅ Function-killing feature  
-🔘 Removes duplicate ads  
-🔘 Filters number of views  
+✅ Removes duplicate ads  
+✅ Filters number of views  
 🔘 Blocks unwanted advertisers  
-🔘 Blocks unnamed ads  
-🔘 Improves popup UI  
-🔘 Adds notifications & badge indicators  
+🔘 Blocks unnamed ads
+✅ Improves popup UI  
+✅ Adds notifications & badge indicators  
 
 ---
 
@@ -65,6 +65,12 @@ This extension is currently **not published** on the Chrome Web Store. If you ar
 
 📌 **v0.3**  
 - Stop 'Load Ad' feature  
+
+📌 **v0.4**  
+- Filtering ads with less than 10000 views  
+
+📌 **v1.0**  
+- All main function. user-declared view filters, view and kill pages options  
 
 ---
 

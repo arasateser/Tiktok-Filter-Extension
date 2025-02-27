@@ -1,3 +1,10 @@
+chrome.runtime.onMessage.addListener((message) => {
+    if (message.action === "filterAds") {
+        console.log(`filtering ads with min ${message.minViews} views`);
+        filterAdsByUniqueUsers(message.minViews);
+    }
+})
+
 function parseUniqueUsers(value) {
     if (value === "-" || value.startsWith("0")) {
         return 0; // Not Available or "0-1K" case
@@ -42,16 +49,16 @@ function filterAdsByUniqueUsers(minUsers) {
         if (uniqueUsers < minUsers) {
             ad.style.display = "none";
             //console.log(`Hiding `);
-            console.log(`this ad has ${uniqueUsers} unique users`);
+            console.log(`H ${uniqueUsers} unique users`); //hiding an ad with $uniqueUsers unique users
 
         } else {
             //console.log(`Keeping `);
-            console.log(`this ad has ${uniqueUsers} unique users`);
+            console.log(`K ${uniqueUsers} unique users`);
 
         }
     });
 }
-filterAdsByUniqueUsers(9);
+//filterAdsByUniqueUsers(9); // 9000 users
 
 
 //PROBLEEMMMOOO : PARSELANMIS SAYILAR DOGRU GELMIYOR YAZDIKLARINI GOZDEN GECIR GELEN
