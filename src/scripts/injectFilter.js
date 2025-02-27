@@ -14,7 +14,7 @@ function parseUniqueUsers(value) {
     if (!match) return 0;
 
     let num = parseInt(match[1], 10); // numeric part
-    //if (match[2] === "K") num *= 1000; // convert K -- ihtiyac yok kullanicidan alinan deger carpilacak
+    if (match[2] === "K") num *= 1000; // convert K to 1000
 
     return num;
 }

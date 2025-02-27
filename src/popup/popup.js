@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     document.getElementById("filterViewsButton").addEventListener("click", function () {
-        const minViews = parseInt(document.getElementById("minViews").values, 10) || 9; //get the decimal if not put 9
+        const minViews = parseInt(document.getElementById("minViews").value, 10) || 10; //get the decimal if not put 10
         document.getElementById("message").textContent = `filtering ads with at least ${minViews} views`;
 
         chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
