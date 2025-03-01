@@ -22,6 +22,7 @@ if (window.viewMoreScriptLoaded) { //checking if this script already injected
         if (message.action === "stopViewMore") {//kill process button
             console.log("Stop requested. Stopping view more process");
             updateBadge(false); // Revert to default icon
+            addButtonsToAds();
 
             stopRequested = true;
 
@@ -44,12 +45,14 @@ if (window.viewMoreScriptLoaded) { //checking if this script already injected
             function clickViewMore(button) {//clicking the view more button func
                 if (stopRequested) {
                     console.log("Stop requested. stopping clicks");
+                    addButtonsToAds();
                     return;
                 }
 
                 if (clickCounter >= maxClicks) {//if the limit reached stop
                     if (observerActive) {
                         console.log(`Finished clicking 'View More' ${maxClicks} times. Stopping observer.`);
+                        addButtonsToAds();
                         observer.disconnect();
                         observerActive = false;
                         updateBadge(false); // Change to active

@@ -1,3 +1,4 @@
+console.log("blockButton injected");
 function addButtonsToAds() {
     let ads = document.querySelectorAll(".ad_card");
 
@@ -30,4 +31,4 @@ function addButtonsToAds() {
 
 setTimeout(() => {
     addButtonsToAds();
-}, 1000);
+}, 5000);
