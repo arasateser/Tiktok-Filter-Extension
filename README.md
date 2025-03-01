@@ -47,12 +47,12 @@ This extension is currently **not published** on the Chrome Web Store. If you ar
 
 ✅ User-declared loading values  
 ✅ Function-killing feature  
-✅ Removes duplicate ads  
 ✅ Filters number of views  
 ✅ Improves popup UI  
 ✅ Adds notifications & badge indicators  
 ✅ Blocks unnamed ads
-🔘 Blocks unwanted advertisers  
+✅ Blocks unwanted advertisers  
+🔘 Removes duplicate ads  
 
 ---
 

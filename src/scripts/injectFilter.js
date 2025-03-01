@@ -61,15 +61,12 @@ function filterAdsByUniqueUsers(minUsers, hideUndefined) {
     let totalAds = ads.length;
     let hiddenAds = 0;
     let visibleAds = 0;
-    //setTimeout(() => filterAdsByUniqueUsers(minUsers, hideUndefined), 3000);
 
     if (totalAds === 0) {
         console.log("no ad found. retrying in 2 secs");
         setTimeout(() => filterAdsByUniqueUsers(minUsers), 3000);
         return;
     }
-
-    //console.log(`found ${ads.length} ads`);
 
     ads.forEach(ad => {
         let uniqueUsers = getUniqueUsers(ad);
