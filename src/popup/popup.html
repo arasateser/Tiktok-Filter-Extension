@@ -90,6 +90,11 @@
                 object-fit: contain;
                 cursor: pointer;
             }
+
+        #removeFiltersButton {
+            background-color: #dc3545;
+            color: white;
+        }
     </style>
 </head>
 
@@ -101,13 +106,18 @@
     <label for="maxClicksInput">Number of Pages:</label>
     <input type="number" id="maxClicksInput" min="1" value="20" />
 
-    <button id="viewMoreButton">View More Pages</button>
-    <button id="killProcessButton">Kill Process</button>
+    <div style="display: flex; gap: 5px;">
+        <button id="viewMoreButton">View More Pages</button>
+        <button id="killProcessButton">Kill Process</button>
+    </div>
 
     <label for="minViews">Number of Views:</label>
-    <input type="number" id="minViews" value="10000" />
+    <input type="number" id="minViews" value="1000" />
+    <div style="display: flex; gap: 5px;">
+        <button id="filterViewsButton">Filter Views</button>
+        <button id="removeFiltersButton">Remove Filters</button>
+    </div>
 
-    <button id="filterViewsButton">Filter Views</button>
 
     <p id="message">Press a button!</p>
 

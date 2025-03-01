@@ -5,6 +5,17 @@ chrome.runtime.onMessage.addListener((message) => {
     }
 })
 
+chrome.runtime.onMessage.addListener((message) => {
+    if (message.action === "removeFilters") {
+        console.log("removing all filters, showing all ads");
+
+        let ads = document.querySelectorAll(".ad_card");
+        ads.forEach(ad => {
+            ad.style.display = "block";
+        });
+    }
+});
+
 function parseUniqueUsers(value) {
     if (value === "-" || value.startsWith("0")) {
         return 0; // Not Available or "0-1K" case
@@ -53,13 +64,8 @@ function filterAdsByUniqueUsers(minUsers) {
 
         } else {
             //console.log(`Keeping `);
-            console.log(`K ${uniqueUsers} unique users`);
+            //console.log(`K ${uniqueUsers} unique users`);
 
         }
     });
 }
-//filterAdsByUniqueUsers(9); // 9000 users
-
-
-//PROBLEEMMMOOO : PARSELANMIS SAYILAR DOGRU GELMIYOR YAZDIKLARINI GOZDEN GECIR GELEN
-//DEGERLERE VE HANGI REKLAMLARIN TAKILDIGINA BAK GONDERDIGIN DEGERE GORE YANLIS FILTRELENIYORLAR

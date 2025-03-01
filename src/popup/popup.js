@@ -33,4 +33,14 @@ document.addEventListener("DOMContentLoaded", function () {
             chrome.tabs.sendMessage(tabs[0].id, { action: "filterAds", minViews });
         });
     });
+
+    document.getElementById("removeFiltersButton").addEventListener("click", function () {
+        document.getElementById("message").textContent = "removing filters...";
+
+        chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+            if (tabs.length === 0) return;
+
+            chrome.tabs.sendMessage(tabs[0].id, { action: "removeFilters" });
+        });
+    });
 });
