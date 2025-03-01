@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (message.action === "updateAdCountPop") {
-            document.getElementById("adCountPop").textContent = `Ads: ${message.visible} shown / ${message.hidden} hidden`;
+            document.getElementById("adCountPop").textContent = `${message.visible} shown / ${message.hidden} hidden`;
         }
     });
 

@@ -1,6 +1,6 @@
 chrome.runtime.onMessage.addListener((message) => {
     if (message.action === "filterAds") {
-        console.log(`filtering ads with min ${message.minViews}\nviews showUndefined: ${message.showUndefined}`);
+        console.log(`filtering below ${message.minViews} views\nshowUndefined: ${message.showUndefined}`);
         filterAdsByUniqueUsers(message.minViews, message.showUndefined);
     }
 })
@@ -79,7 +79,7 @@ function filterAdsByUniqueUsers(minUsers, hideUndefined) {
         if (uniqueUsers < minUsers) {
             ad.style.display = "none";
             hiddenAds++;
-            console.log(`Hide ${uniqueUsers} users`); //hiding an ad with $uniqueUsers unique users
+            console.log(`Hide '${uniqueUsers}'' users`); //hiding an ad with $uniqueUsers unique users
 
         } else if (uniqueUsers === "hyphen" && hideUndefined) {
             ad.style.display = "none";
@@ -104,5 +104,5 @@ function filterAdsByUniqueUsers(minUsers, hideUndefined) {
         hidden: hiddenAds
     });
 
-    console.log(`Ads shown: ${visibleAds}, Ads filtered: ${hiddenAds}`);
+    console.log(`${visibleAds} shown / ${hiddenAds} hidden`);
 }
