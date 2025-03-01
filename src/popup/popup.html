@@ -111,6 +111,15 @@
         <button id="killProcessButton">Kill Process</button>
     </div>
 
+    <hr style="width: 100%; border: none; border-top: 1px solid #ccc; margin: 10px 0;">
+
+
+    <div style="display: flex; align-items: center; gap: 5px;">
+        <label for="hidendefined">Hide Undefined</label>
+        <input type="checkbox" id="hideUndefined" checked>
+    </div>
+
+
     <label for="minViews">Number of Views:</label>
     <input type="number" id="minViews" value="1000" />
     <div style="display: flex; gap: 5px;">
@@ -118,6 +127,8 @@
         <button id="removeFiltersButton">Remove Filters</button>
     </div>
 
+
+    <p id="adCountPop">Ads shown: 0 / 0 hidden</p>
     <p id="message">Press a button!</p>
 
     <script src="popup.js"></script>

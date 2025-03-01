@@ -51,8 +51,8 @@ This extension is currently **not published** on the Chrome Web Store. If you ar
 ✅ Filters number of views  
 ✅ Improves popup UI  
 ✅ Adds notifications & badge indicators  
+✅ Blocks unnamed ads
 🔘 Blocks unwanted advertisers  
-🔘 Blocks unnamed ads
 
 ---
 
@@ -75,6 +75,9 @@ This extension is currently **not published** on the Chrome Web Store. If you ar
 
 📌 **v1.0.1**  
 - Remove filters functionality added
+
+📌 **v1.0.2**  
+- Hide unavailable ads and optional filter out ads without view data
 ---
 
 ## 👤 Author  
