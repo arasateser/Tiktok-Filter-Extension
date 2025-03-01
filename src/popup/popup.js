@@ -11,6 +11,11 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     }
+    chrome.runtime.onMessage.addListener((message) => {
+        if (message.action === "updateMessage") {
+            document.getElementById("message").textContent = message.text;
+        }
+    });
 
     document.getElementById("viewMoreButton").addEventListener("click", function () {
         messageElement.textContent = "Pressed Load More Pages";
@@ -25,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("filterViewsButton").addEventListener("click", function () {
         const minViews = parseInt(document.getElementById("minViews").value, 10) || 10; //get the decimal if not put 10
-        document.getElementById("message").textContent = `filtering ads with at least ${minViews} views`;
 
         chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
             if (tabs.length === 0) return;
@@ -35,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     document.getElementById("removeFiltersButton").addEventListener("click", function () {
-        document.getElementById("message").textContent = "removing filters...";
+        document.getElementById("message").textContent = "Filters Removed";
 
         chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
             if (tabs.length === 0) return;

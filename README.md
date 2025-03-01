@@ -38,6 +38,7 @@ This extension is currently **not published** on the Chrome Web Store. If you ar
 
 🚀 **Pin the extension** for easier access.  
 🚀 After pressing the **"View More Pages"** button, **hover your mouse over any ad** to activate the **clicking functionality** (triggers the **Observer API**).  
+🚀 To change the filters first press **"Remove Filters"** than apply the filter.
 🚀 This extension is **designed for Google Chrome** at this stage. It may not function properly in other browsers.  
 
 ---
@@ -48,10 +49,10 @@ This extension is currently **not published** on the Chrome Web Store. If you ar
 ✅ Function-killing feature  
 ✅ Removes duplicate ads  
 ✅ Filters number of views  
-🔘 Blocks unwanted advertisers  
-🔘 Blocks unnamed ads
 ✅ Improves popup UI  
 ✅ Adds notifications & badge indicators  
+🔘 Blocks unwanted advertisers  
+🔘 Blocks unnamed ads
 
 ---
 
@@ -72,6 +73,8 @@ This extension is currently **not published** on the Chrome Web Store. If you ar
 📌 **v1.0**  
 - All main function. user-declared view filters, view and kill pages options  
 
+📌 **v1.0.1**  
+- Remove filters functionality added
 ---
 
 ## 👤 Author  

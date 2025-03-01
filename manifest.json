@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "TCC Override",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Chrome extension that automatically loads ads on Tiktok Ad Library, removes duplicate ads, filters to make product analysis faster and more efficient.",
   "permissions": [ "scripting", "activeTab", "storage" ],
   "host_permissions": [ "https://library.tiktok.com/*" ],

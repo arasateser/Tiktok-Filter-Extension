@@ -45,8 +45,11 @@ function getUniqueUsers(ad) {
 
 function filterAdsByUniqueUsers(minUsers) {
     let ads = document.querySelectorAll(".ad_card");
+    let totalAds = ads.length;
+    let hiddenAds = 0;
+    let visibleAds = 0;
 
-    if (ads.length === 0) {
+    if (totalAds === 0) {
         console.log("no ad found. retrying in 2 secs");
         setTimeout(() => filterAdsByUniqueUsers(minUsers), 3000);
         return;
@@ -59,13 +62,18 @@ function filterAdsByUniqueUsers(minUsers) {
 
         if (uniqueUsers < minUsers) {
             ad.style.display = "none";
-            //console.log(`Hiding `);
+            hiddenAds++;
             console.log(`H ${uniqueUsers} unique users`); //hiding an ad with $uniqueUsers unique users
 
         } else {
-            //console.log(`Keeping `);
-            //console.log(`K ${uniqueUsers} unique users`);
-
+            visibleAds++;
         }
     });
+
+    chrome.runtime.sendMessage({
+        action: "updateMessage",
+        text: `Filtered: ${hiddenAds} | Shown: ${visibleAds}`
+    });
+
+    console.log(`Ads shown: ${visibleAds}, Ads filtered: ${hiddenAds}`);
 }
