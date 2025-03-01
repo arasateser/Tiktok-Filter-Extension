@@ -78,6 +78,9 @@ This extension is currently **not published** on the Chrome Web Store. If you ar
 
 📌 **v1.0.2**  
 - Hide unavailable ads and optional filter out ads without view data
+
+📌 **v1.0.3**  
+- Removing ads from unwanted advertisers button
 ---
 
 ## 👤 Author  
